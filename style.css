@@ -23,20 +23,18 @@ header{
     align-items: center;
     background: #161616;
     border-radius: 30px;
-    padding-top: 30px;
     margin: 50px auto;
-    gap: 40px;
 }
 
 .header-image{
     width: 100%;
     padding-right: 30px;
     align-self: flex-end;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 h1{
-    font-size: 61px;
+    font-size: 60px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -57,7 +55,7 @@ main{
 
 /* Header Section Style */
 .home-container{
-    padding: 30px 60px;
+    padding: 40px 60px;
     color: white;
 }
 
@@ -65,7 +63,7 @@ main{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 20px;
     color: #FFFFFF;
     padding: 20px 0px 30px;
 }
@@ -97,6 +95,7 @@ aside{
 }
 
 .sidebar-links{
+    display: inline-block;
     text-decoration: none;
     text-align: center;
     background: #FFFFFF;
@@ -104,11 +103,10 @@ aside{
     padding: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    /* line-height: 30px; */
     color: #161616;
 }
 
-.sidebar-links:visited{
+.visited{
     background: rgb(23, 107, 167);
     color: #fcfbfb;
 }
@@ -320,6 +318,11 @@ footer h3{
         text-align: center;
     }
 
+    .visited{
+    background: rgb(23, 107, 167);
+    color: #fcfbfb;
+    }
+
     .blogs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -395,6 +398,11 @@ footer h3{
         border: 1px solid #f51414;
         border-radius: 10px;
     }
+
+    .visited{
+    background: rgb(23, 107, 167);
+    color: #fcfbfb;
+    }    
 
     .blogs {
         display: grid;
