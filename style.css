@@ -13,7 +13,7 @@
 /* common styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fcfbfb;
+    background-color: #fcfcfb;
 }
 
 header{
@@ -21,7 +21,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #161616;
+    background: #070707;
     border-radius: 30px;
     margin: 50px auto;
 }
@@ -68,6 +68,8 @@ main{
     padding: 20px 0px 30px;
 }
 
+/* Animation Style */
+
 .Watch-btn{
     width: 160px;
     text-decoration: none;
@@ -80,6 +82,18 @@ main{
     gap: 10px;
     background: #DD0000;
     border-radius: 5px;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    0% {background: red; transform: scale(1);}
+    25% {background: gold; transform: scale(1.1);}
+    50% {background: lime; scale: (1.3);}
+    75% {background: dodgerblue; scale: (1.1);}
+    100% {background: purple; transform: scale(1);}
 }
 
 /* Side-Bar Section */
@@ -414,7 +428,7 @@ footer h3{
     /* Upcoming matches page section */
 
     .upcoming-matches {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 
@@ -429,3 +443,4 @@ footer h3{
     footer ul li{
         font-size: 20px;
     }
+}
