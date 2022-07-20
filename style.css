@@ -38,15 +38,6 @@ h2{
     font-size: 40px;
 }
 
-p{
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 26px;
-    color: #FFFFFF;
-    padding: 20px 0px 30px;
-}
-
 header img{
     width: 100%;
     padding: 33px 80px 0px 24px;
@@ -63,6 +54,16 @@ main{
     padding: 111px 0px 0px 106px;
     color: white;
 }
+
+.description {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 20px 0px 30px;
+}
+
 .Watch-btn{
     width: 160px;
     text-decoration: none;
@@ -81,7 +82,7 @@ main{
 aside{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 27%;
     height: max-content;
     padding: 30px;
     background: #161616;
@@ -94,7 +95,7 @@ aside{
     text-align: center;
     background: #FFFFFF;
     border-radius: 10px;
-    padding: 17px;
+    padding: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 30px;
@@ -141,6 +142,51 @@ aside{
     padding-left: 10px;
 }
 
+/* Upcoming matches section */
+.upcoming-matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin:0px 20px;
+    flex: 3;
+}
+
+.match{
+    padding: 22px 26px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.20);
+}
+
+.match .team-flags{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-flags img{
+    width: 30%;
+}
+
+.team-flags p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #161616;
+    font-weight: 600;
+}
+
+.team-name {
+    color: #161616;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.match-time{
+    font-size: 14px;
+    color: #161616;
+}
+
 /* footer styles */
 footer{
     padding: 60px 0;
@@ -171,3 +217,28 @@ footer ul li{
     text-decoration: none;
     color: white;
 }
+
+footer h3{
+    font-size: 25px;
+    margin: 50px 0 30px;
+}
+
+.footer-icons a{
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    font-size: 24px;
+    color: #ffffffe6;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.footer-icons .fa-brands{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
