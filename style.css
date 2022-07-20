@@ -103,12 +103,18 @@ aside{
     border-radius: 10px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 30px;
     color: #161616;
 }
 
+.sidebar-links:visited{
+    background: #DD0000;
+    color: #fcfbfb;
+}
+
 /* Blogs Section */
+
 .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -149,12 +155,14 @@ aside{
 }
 
 /* Tablet Button */
+
 .tablet-button{
     display: none;
     margin: 30px auto;
 }
 
 /* Upcoming matches section */
+
 .upcoming-matches{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -254,68 +262,149 @@ footer h3{
 }
 
 /* Responsive for tablet */
-@media only screen and (min-width: 767px) and (max-width: 834px) {
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
     
 
-/* Header */
-header{
-    width: 90%;
+    /* Header */
+
+    header{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .header-image {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    header img{
+        width: 100%;  
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: normal;
+    }
+
+    .home-container{
+        padding-right: 2px;
+    }
+
+    /* Main section */
+
+    main {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Sidebar Section */
+
+    aside {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: #FFFFFF;   
+        margin: 30px auto;
+    }
+
+    .sidebar-links{
+        width: 200px;
+        height: 55px;
+        background: #FFFFFF;
+        border: 1px solid #f51414;
+        border-radius: 10px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        gap: 24px;
+    }
+
+    .tablet-button{
+        display: block;
+        font-family: 'Poppins',sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
 }
 
-.header-image {
-    width: 100%;
+/* Responsive for phone */
 
-}
-header img{
-    width: 100%;  
-}
+@media screen and (max-width: 576px) {
+    /* Header */
 
-h1 {
-    font-size: 35px;
-    line-height: normal;
-}
+    header{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px 0 0;
+        margin: 50px auto;
+    }
 
-.home-container{
-    padding-right: 2px;
-}
+    .header-image{
+        width: 100%;
+    }
 
-/* Main section */
-main {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
+    .Watch-btn{
+        margin: 0 auto;
+    }
 
-/* Sidebar Section */
-aside {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: #FFFFFF;   
-    margin: 30px auto;
-}
+    /* Main section */
 
-.sidebar-links{
-    width: 200px;
-    height: 55px;
-    background: #FFFFFF;
-    border: 1px solid #f51414;
-    border-radius: 10px;
-}
+    main {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Sidebar Section */
+    
+    aside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: #FFFFFF;
+        margin: 5px auto;
+        align-items: center;
+    }
+    
+    aside a {
+        width: max-content;
+    }
+    
+    .sidebar-links {
+        width: 200px;
+        height: 55px;
+        background: #FFFFFF;
+        border: 1px solid #f51414;
+        border-radius: 10px;
+    }
 
-.blogs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    gap: 24px;
-}
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        gap: 24px;
+    }
 
-.tablet-button{
-    display: block;
-    font-family: 'Poppins',sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-}
+    /* footer section */
 
-}
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer ul li{
+        font-size: 20px;
+    }
