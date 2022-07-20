@@ -17,7 +17,7 @@ body {
 }
 
 header{
-    width: 84%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,13 +30,13 @@ header{
 
 .header-image{
     width: 100%;
-    padding-right: 75px;
+    padding-right: 30px;
     align-self: flex-end;
     margin-bottom: -3px;
 }
 
 h1{
-    font-size: 70px;
+    font-size: 61px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -50,7 +50,7 @@ header img{
 }
 
 main{
-    width: 84%;
+    width: 80%;
     display: flex;
     margin: 0 auto;
 }
@@ -88,9 +88,9 @@ main{
 aside{
     display: flex;
     flex-direction: column;
-    width: 27%;
+    min-width: 240px;
     height: max-content;
-    padding: 30px;
+    padding: 30px 25px;   
     background: #161616;
     border-radius: 10px;
     row-gap: 30px;
@@ -101,15 +101,15 @@ aside{
     text-align: center;
     background: #FFFFFF;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    line-height: 30px;
+    /* line-height: 30px; */
     color: #161616;
 }
 
 .sidebar-links:visited{
-    background: #DD0000;
+    background: rgb(23, 107, 167);
     color: #fcfbfb;
 }
 
@@ -168,7 +168,7 @@ aside{
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin:0px 20px;
-    flex: 3;
+    flex: 1;
 }
 
 .match{
@@ -263,7 +263,7 @@ footer h3{
 
 /* Responsive for tablet */
 
-@media screen and (min-width: 767px) and (max-width: 992px) {
+@media screen and (min-width: 751px) and (max-width: 992px) {
     
 
     /* Header */
@@ -317,6 +317,7 @@ footer h3{
         background: #FFFFFF;
         border: 1px solid #f51414;
         border-radius: 10px;
+        text-align: center;
     }
 
     .blogs {
@@ -333,11 +334,16 @@ footer h3{
         font-weight: 600;
     }
 
+    .upcoming-matches {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
 }
 
 /* Responsive for phone */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 750px) {
     /* Header */
 
     header{
@@ -395,6 +401,13 @@ footer h3{
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
         gap: 24px;
+    }
+
+    /* Upcoming matches page section */
+
+    .upcoming-matches {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     /* footer section */
